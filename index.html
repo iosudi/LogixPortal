@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=supreme@800,400,200,100,300,500,700&f[]=alpino@300,400,100,700,900,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="favico.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="hero">
+      <header>
+        <nav>
+          <div class="logo">UWU..</div>
+          <div class="navigation">
+            <div class="nav-items">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Our Work</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="btn">
+              <button onclick="login()">Login</button>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <section class="main">
+        <div class="wrapper">
+          <div class="icon">
+            <i class="fa-solid fa-x"></i>
+          </div>
+          <div class="form-box login">
+            <h3>Login</h3>
+            <div class="inputs">
+              <div class="input-field email-box">
+                <input type="email" required />
+                <label>Email</label>
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="input-field pass-box">
+                <input type="password" required />
+                <label>Password</label>
+                <i class="fa-solid fa-lock"></i>
+              </div>
+            </div>
+            <div class="login-options">
+              <div class="options">
+                <a href="#">Forgot password ?</a>
+                <span>
+                  <label
+                    ><input type="checkbox" class="pass-check" /> Show
+                    Password</label
+                  >
+                </span>
+              </div>
+              <button class="login-btn">Login</button>
+              <div class="new-acc">
+                Don't have account?
+                <a href="#" class="register-link">Sign Up</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-box signUp">
+            <h3>Sign Up</h3>
+            <div class="inputs">
+              <div class="input-field user-box">
+                <input type="text" required />
+                <label>Username</label>
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <div class="input-field email-box">
+                <input type="email" required />
+                <label>Email</label>
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="input-field pass-box">
+                <input type="password" required />
+                <label>Password</label>
+                <i class="fa-solid fa-lock"></i>
+              </div>
+            </div>
+            <div class="login-options">
+              <div class="options">
+                <span>
+                  <label>
+                    <input type="checkbox" /> I agree to terms &
+                    conditions</label
+                  >
+                </span>
+              </div>
+              <button class="login-btn">Sign Up</button>
+              <div class="new-acc">
+                Already have account? <a href="#" class="login-link">Login</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
